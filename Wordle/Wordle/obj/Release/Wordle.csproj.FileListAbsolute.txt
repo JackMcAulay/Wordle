@@ -7,3 +7,13 @@ C:\Users\jack\source\repos\Wordle\Wordle\obj\Release\Wordle.csproj.GenerateResou
 C:\Users\jack\source\repos\Wordle\Wordle\obj\Release\Wordle.csproj.CoreCompileInputs.cache
 C:\Users\jack\source\repos\Wordle\Wordle\obj\Release\Wordle.exe
 C:\Users\jack\source\repos\Wordle\Wordle\obj\Release\Wordle.pdb
+V:\GitHub\Wordle\Wordle\Wordle\obj\Release\Wordle.csprojAssemblyReference.cache
+V:\GitHub\Wordle\Wordle\Wordle\obj\Release\Wordle.Form1.resources
+V:\GitHub\Wordle\Wordle\Wordle\obj\Release\Wordle.Properties.Resources.resources
+V:\GitHub\Wordle\Wordle\Wordle\obj\Release\Wordle.csproj.GenerateResource.cache
+V:\GitHub\Wordle\Wordle\Wordle\obj\Release\Wordle.csproj.CoreCompileInputs.cache
+V:\GitHub\Wordle\Wordle\Wordle\obj\Release\Wordle.exe
+V:\GitHub\Wordle\Wordle\Wordle\obj\Release\Wordle.pdb
+V:\GitHub\Wordle\Wordle\Wordle\bin\Release\Wordle.exe.config
+V:\GitHub\Wordle\Wordle\Wordle\bin\Release\Wordle.exe
+V:\GitHub\Wordle\Wordle\Wordle\bin\Release\Wordle.pdb

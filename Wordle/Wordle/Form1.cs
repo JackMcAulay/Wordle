@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.IO;
 
 namespace Wordle
 {
@@ -32,7 +34,8 @@ namespace Wordle
             {
                 if (onRow == 0)
                 {
-                    genWord();
+                    //genWord();
+                    genWordAPI();
                     setupGrid();
                 }
                 check();
@@ -63,6 +66,33 @@ namespace Wordle
             word = words[rand.Next(0,4)];
 
             Console.Write(word);
+        }
+
+        private void genWordAPI()
+        {
+            string genWord;
+            bool wordFound = false;
+
+            while (!wordFound)
+            {
+                WebRequest request = HttpWebRequest.Create("https://random-word-api.herokuapp.com/word");
+                WebResponse response = request.GetResponse();
+                StreamReader reader = new StreamReader(response.GetResponseStream());
+
+                genWord = reader.ReadToEnd();
+                genWord = genWord.Remove(0, 2);
+                genWord = genWord.Remove(genWord.Length - 2);
+
+                Console.WriteLine(genWord);
+                Console.WriteLine(genWord.Length);
+
+                if (genWord.Length == 5)
+                {
+                    word = genWord;
+                    wordFound = true;
+                }
+            }
+            Console.WriteLine(word);
         }
 
         private void setupGrid()
