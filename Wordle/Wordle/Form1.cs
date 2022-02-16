@@ -34,8 +34,13 @@ namespace Wordle
             {
                 if (onRow == 0)
                 {
-                    //genWord();
-                    genWordAPI();
+                    //Limited selection of words for testing
+                    genWord();
+
+                    //Get a 5 letter word from a Random word API
+                    //Can be slow
+                    //genWordAPI();
+
                     setupGrid();
                 }
                 check();
